@@ -367,3 +367,96 @@
     color: $primary-color;
 }   
 /* Beauty-cream-section-end */
+
+// New-Product-Start
+
+#new-product{
+    padding-bottom: 100px;
+}
+
+#new-product .product{
+    @include product();
+}
+#new-product .new-product-slider .new-product-slider-arrow{
+    position: absolute;
+    z-index: 38;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 50px;
+    color: $light-color;
+    width: 30px;
+    height: 50px;
+    background-color: rgba($primary-color-3d,0.5);
+    &.fa-chevron-left{
+        left: 15px;
+    }
+    &.fa-chevron-right{
+        right: 15px;
+    }
+}
+.product-action-tooltip{
+    --bs-tooltip-bg: black;
+    --bs-tooltip-color: var(--bs-white);
+  }
+// New-Product-End
+
+// Best-Cream-section-Start
+
+#best-cream{
+    background-image: url(../images/Mask\ here.png);
+    background-size: cover;
+    background-position: center;
+    padding-top: 110px;
+    padding-bottom: 103px;
+    text-align: left;
+    h2{
+        color: $light-color;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 46px;
+        padding-bottom: 40px;
+        font-family: $primary-font;
+    }
+    p{
+        color: $light-color;
+        font-family: $body-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        padding-bottom: 50px
+    }
+    a{
+        padding-right: 40px;
+        padding-left: 34px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: $light-color;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        transition: .5s;
+        border: 1px solid $light-color;
+
+        .fa-arrow-right{
+            padding-left: 5px;
+        }
+
+        &:hover{
+            color: $light-color;
+            background-color: $primary-color;
+            border: 1px solid $primary-color;
+        }
+    }
+
+}
+
+
+
+
+
+// Best-Cream-section-End

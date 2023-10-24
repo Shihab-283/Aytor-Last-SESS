@@ -4,3 +4,13 @@ body{
     font-family: 'Josefin Sans', sans-serif; */
     font-family: $primary-font;
 }
+.section-heading h2{
+    color: $text-color;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 36px
+}

@@ -1,0 +1,85 @@
+@mixin product(){
+    position: relative;
+    text-align: center;
+    border: 1px solid $bg-color-dark;
+    overflow: hidden;
+    .product-img{
+        position: relative;
+
+        img:last-child{
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: .5s
+        }
+    }
+    &:hover .product-img img:last-child{
+        visibility: visible;
+        opacity: 1;
+    }    
+    .product-info{
+        padding: 25px 0px;
+        h6{
+            ins{
+                color: $primary-color;
+                padding-right: 5px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                text-decoration: none
+                
+            }
+            del{
+                color: $paragraph-color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+            }
+        }
+        h5{
+            color: $text-color;
+            text-align: center;
+            font-family: Josefin Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 28px;
+        }
+        ul{
+            justify-content: center;
+            li i{
+                color: $primary-color;
+            }
+        }
+      
+    }
+    .product-action{
+        position: absolute;
+        right: -50px;
+        top: 44px;
+        z-index: 99;
+        transition: .5s;
+        ul li{
+            margin-bottom: 10px;
+        }
+        ul li button{
+            width: 36px;
+            height: 36px;
+            border: none;
+            color: $primary-color-3d;
+            border-radius: 50%;
+            line-height: 36px;
+            text-align: center;
+            box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.08);
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+    }
+    &:hover .product-action{
+        right: 17px;
+    }
+}

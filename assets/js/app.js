@@ -31,6 +31,19 @@ $(document).ready(function(){
 
 
       // Banner-slider-slick-End
+
+      // New-product-slider
+      $('.new-product-slider').slick({
+        slidesToShow:4,
+        prevArrow:'<i class="fa-solid fa-chevron-left new-product-slider-arrow"></i>',
+        nextArrow:'<i class="fa-solid fa-chevron-right new-product-slider-arrow"></i>',
+        autoplay:true,
+      });
   
 
   });
+
+  // Actived Tooltipe
+
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
