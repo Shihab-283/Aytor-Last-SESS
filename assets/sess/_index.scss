@@ -408,8 +408,9 @@
     background-size: cover;
     background-position: center;
     padding-top: 110px;
-    padding-bottom: 103px;
+    padding-bottom: 110px;
     text-align: left;
+    margin-bottom: 100px;
     h2{
         color: $light-color;
         font-size: 36px;
@@ -455,8 +456,42 @@
 
 }
 
-
-
-
-
 // Best-Cream-section-End
+
+
+// Best-Sell-Section-Start
+
+.best-sell a{
+    padding-right: 40px;
+    padding-left: 34px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $light-color;
+    background-color: $primary-color;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    transition: .5s;
+    text-align: center;
+    margin-left: 33%;
+    // margin-bottom: 100px;
+    .fa-arrow-right{
+        padding-left: 10px;
+    }
+
+    &:hover{
+        color:$primary-color;
+        background-color: $light-color;
+    }
+}
+
+
+
+
+
+
+
+
+// Best-Sell-Section-End
