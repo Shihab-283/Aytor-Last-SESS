@@ -39,6 +39,32 @@ $(document).ready(function(){
         nextArrow:'<i class="fa-solid fa-chevron-right new-product-slider-arrow"></i>',
         autoplay:true,
       });
+
+
+              // Countdown Activation
+        $('#deals_countdown').countdown('2023/12/10', function(event) {
+          var $this = $(this).html(event.strftime(''
+            + '<div><h4>%D</h4><P>Days</P></div>  '
+            +"<span>:</span>"
+            + '<div><h4>%H</h4><P>Hours</P></div>  '
+            +"<span>:</span>"
+            + '<div><h4>%M</h4><P>Minute</P></div>  '
+          + "<span>:</span>"
+            + '<div><h4>%S</h4><P>Sec</P></div> '));
+        });
+
+      //   Deals Slider
+      $('.deals_slider').slick({
+          arrows:false,
+          dots:true,
+          slidesToShow: 2,
+      })
+      // Latest News Slider
+      $('.latest_slider').slick({
+          arrows:false,
+          dots: true,
+          slidesToShow:4,
+      })
   
 
   });
@@ -47,3 +73,6 @@ $(document).ready(function(){
 
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+
