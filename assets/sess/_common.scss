@@ -27,3 +27,151 @@ body{
     line-height: 46px;
     margin-bottom: 36px;
 }
+
+
+/* =========== Footer Css Start=========== */
+footer {
+    background-color: $text-color;
+}
+footer .footer_upper {
+    border-bottom: 1px solid $paragraph-color;
+    padding: 76px 0;
+}
+footer .footer_upper .widget-1 ul li a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: $light-color;
+    color: rgba(68, 68, 68, 1);
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    display: inline-block
+}
+footer .footer_upper .widget-1 ul li a:hover {
+    background-color: $primary-color;
+    color: $light-color;
+}
+footer .footer_lower {
+    color: $text-color;
+    padding: 70px 0;
+}
+footer .footer_lower .widget h4 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 22px;
+    color: $light-color;
+    font-family: $primary-font;
+    font-weight: 700;
+}
+footer .footer_lower .widget nav ul li a {
+    color: $light-color;
+    font-family: $body-font;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+footer .footer_lower .widget nav ul li a:hover {
+    color: $primary-color;
+}
+footer .footer_lower .widget nav ul li a::before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 700;
+    padding-right: 7px;
+}
+footer .footer_lower .widget table tr {
+    font-family: $body-font;
+    font-size: 16px;
+    line-height: 28px;
+}
+footer .footer_lower .widget table tr th {
+    padding-right: 18px;
+}
+
+footer .footer_lower .widget.widget-7,
+footer .footer_lower .widget.widget-7 a {
+    color: $light-color;
+    font-family: $body-font;
+    line-height: 28px;
+}
+footer .footer_lower .widget.widget-7 li {
+    margin-bottom: 5px;
+}
+footer .footer_lower .widget.widget-7 i {
+    font-size: 24px;
+    color: $primary-color;
+    padding-right: 10px;
+}
+footer .footer_lower .widget.widget-8 p {
+    font-family: $body-font;
+    margin-bottom: 23px;
+    line-height: 28px;
+    color: $light-color;
+}
+footer .footer_lower .widget.widget-8 form {
+    background-color: $light-color;
+}
+footer .footer_lower .widget.widget-8 input {
+    background: none;
+    border: none;
+    padding: 11px 10px;
+    line-height: 28px;
+    font-family: $body-font;
+}
+footer .footer_lower .widget.widget-8 button {
+    border: none;
+    color: $light-color;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    background: $primary-color;
+    padding: 8px 17px;
+}
+
+/* =========== Footer Section Css End =========== */
+
+/* =========== Copyright Section Css Start =========== */
+#copyright {
+    background-color: rgba(255, 2555, 255, 0.1);
+}
+#copyright p {
+    color: $light-color;
+    font-family: $body-font;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 21px 0;
+}
+#copyright p a {
+    color: $primary-color;
+}
+
+/* =========== Copyright Section Css End =========== */
+/* =========== Footer Css End =========== */
+
+/* =========== Back To Top Button Css Start =========== */
+#backToTop{
+    width: 60px;
+    height: 60px;
+    line-height: 52px;
+    border: none;
+    background-color: $primary-color;
+    color: $light-color;
+    border-radius: 50%;
+    border: 5px solid $light-color;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    right: 55px;
+    bottom: 40px;
+    display: none;
+}
+
+
+
+/* =========== Back To Top Button Css End =========== */
