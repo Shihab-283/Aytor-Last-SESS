@@ -28,6 +28,198 @@ body{
     margin-bottom: 36px;
 }
 
+/* Right Toggle Canvas */
+#offcanvasRight{
+    width: 465px;
+}
+#offcanvasRight .offcanvas-title{
+    font-family: $primary-font;
+    font-weight: 700;
+    font-size: 24px;
+    margin:33px 0 0 15px;
+    padding-bottom: 10px;
+
+}
+#offcanvasRight h5{
+    border-bottom:1px solid rgb(206, 202, 202);
+    width: 90%;
+}
+#offcanvasRight .offcanvas-body img{
+    width: 75px;
+    height: 75px;
+}
+#offcanvasRight .offcanvas-header{
+    background-color:$light-color;
+    padding-top: 48px;
+    padding-bottom: 0;
+    position: relative;
+}
+#offcanvasRight .offcanvas-header button{
+    color: #000;
+    font-size: 15px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    transition: .5s;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+#offcanvasRight .offcanvas-header button:hover{
+    color: $primary-color;
+    border-color: $primary-color;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    line-height: 63px;
+}
+#offcanvasRight .offcanvas-body .item{
+    border-bottom:1px solid rgb(206, 202, 202);
+    width: 90%;
+    margin-left: 15px;
+}
+#offcanvasRight .offcanvas-body .item{
+    padding: 20px 0;
+}
+#offcanvasRight .offcanvas-body .item img{
+    margin-right: 15px;
+}
+#offcanvasRight .offcanvas-body .item ul{
+    margin-top: 10px;
+}
+#offcanvasRight .offcanvas-body .item ul li{
+    margin-bottom: 5px;
+}
+#offcanvasRight .offcanvas-body .item ul li a{
+    font-size: 16px;
+    color: $text-color;
+    font-family: $primary-font;
+    font-weight: 600px;
+}
+#offcanvasRight .offcanvas-body .item ul .item_cost{
+    color: $primary-color;
+}
+#offcanvasRight .offcanvas-body .item i{
+    margin: 27px 0 0 158px;
+}
+#offcanvasRight .offcanvas-body p{
+    border-bottom: none;
+    font-size: 18px;
+    font-family: $body-font;
+    color: $text-color;
+    margin: 18px 0 18px 15px;
+}
+#offcanvasRight .offcanvas-body .button{
+    margin-left: 15px;
+    margin-bottom: 100px;
+
+}
+#offcanvasRight .offcanvas-body .button button{
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 15px 54px;
+    transition: .5s;
+    cursor: pointer;
+}
+#offcanvasRight .offcanvas-body .button button:hover{
+    background-color: $primary-color-3d;
+    border-color: $primary-color-3d;
+}
+#offcanvasRight .offcanvas-body .button button a{
+    color:$light-color;
+    font: size 18px; ;
+    font-family:$primary-font ;
+    font-weight: 600;
+}
+/* Right Toggle Canvas */
+
+
+/* side manu css start */
+.btn{
+    border: none;
+    background-color: $primary-color;
+    font-size: 30px;
+    padding: 10px 14px 6px 14px;
+    border: 1px solid $primary-color;
+}
+#offcanvasExample .offcanvas-header{
+    background-color: rgba(28,185,200,0.1);
+    padding-top: 40px;
+    padding-bottom: 30px;
+    align-items: center;
+    position: relative;
+}
+#offcanvasExample .offcanvas-header a{
+   margin-left: 100px;
+}
+#offcanvasExample .offcanvas-header button{
+    font-size: 35px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: auto;
+    height: auto;
+}
+.offcanvas-body .manu_name{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.offcanvas-body .manu_name li a{
+    display: inline-block;
+    color: $text-color;
+    border-bottom: 1px solid rgb(206, 202, 202);
+    width: 90%;
+    margin-right: 40px;
+    margin-left: 20px;
+    padding: 12px 0;
+    font-size: 16px;
+    font-family: $body-font;
+}
+.offcanvas-body .item_name .item_name_2{
+    margin-bottom: 20px;
+
+}
+.offcanvas-body .item_name .item_name_2 a{
+    color: $text-color;
+    font-size: 16px;
+    font-family: $body-font;
+    margin-left: 20px;
+}
+.offcanvas-body .item_name .last_item_name a{
+    color: $text-color;
+    font-size: 16px;
+    font-family: $body-font;
+}
+.offcanvas-body .item_name .item_name_2 a i{
+    margin-right: 10px;
+}
+.offcanvas-body .item_name .last_item_name a i{
+    margin-right: 10px;
+}
+.offcanvas-body .item_name .last_item_name{
+    border-bottom: 1px solid rgb(206, 202, 202);
+    width: 90%;
+    padding-bottom: 35px;
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+.offcanvas .offcanvas-body .dropdown ul li select{
+    background-color: transparent;
+    color: $text-color;
+    font-size: 16px;
+    font-family: $primary-font;
+}
+.offcanvas .offcanvas-body .dropdown ul{
+    margin: 0 30px 0 20px;
+}
+/* side manu css ended */
+
 
 /* =========== Footer Css Start=========== */
 footer {
@@ -175,3 +367,4 @@ footer .footer_lower .widget.widget-8 button {
 
 
 /* =========== Back To Top Button Css End =========== */
+

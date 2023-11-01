@@ -135,22 +135,31 @@
     // margin-top: 0;
     opacity: 1;
     visibility: visible;
+
+
+
+    // height: 100%;
     
 }
 .nav-cl-event .nav-evnt-vh{
     width: 100%;
-    height: 100%;
+    height: 100vh !important;
+    justify-content: space-between;
 }
 .nav-cl-event .nav-evnt-vh .cl-evn-box{
     background: none;
     border: 2px solid $primary-color;
-    margin-top: 36%;
+    // margin-top: 36%;
     text-align: center;
-    margin-left: 300px;
+    // margin-left: 300px;
+
+    display: block !important;
+    margin: auto !important;
+    align-items: center !important;
 
 }
 .nav-cl-event .nav-evnt-vh .cl-evn-box .nav-evnt-frm{
-    height: 100%;
+    height: 100vh;
     margin-top: 19px;
     z-index: 101;
 }
@@ -438,7 +447,7 @@
 // Best-Cream-section-Start
 
 #best-cream{
-    background-image: url(../images/Mask\ here.png);
+    background-image: url(../images/best-cream.png);
     background-size: cover;
     background-position: center;
     padding-top: 110px;
@@ -821,7 +830,33 @@
         }
 
     }
+    .shine-life-image{
+        a{
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 60px;
+                height: 60px;
+                background-color: $light-color;
+                color: $primary-color;
+                text-align: center;
+                line-height: 60px;
+                border-radius: 50%;
+                transform: translateY(-50%);
+                transform: translateX(-50%);
+                transition: .5s;
+
+                &:hover{
+                    background-color: $primary-color;
+                    color: $light-color;
+                }
+            }
+        }
+
+    }
 }
+
 
 // Shine-In-Life-Section-End
 
@@ -840,7 +875,7 @@
 // Latest-News-Section-Start
 
 #latest{
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     .latest_slider{
         .slick-dots {
             display: flex;
@@ -938,6 +973,69 @@
 
 
 // Shipping-Cart-Section-Start
+
+
+#shipping{
+    position: relative;
+    .container{
+        padding: 30px 38px;
+        // background-color: red;
+        background: $light-color;
+        box-shadow: 0px 0px 50px 0px rgba(21, 26, 50, 0.10);
+        position: absolute;
+        left: 300px;
+        top: -65px;
+        z-index: 96;
+    }
+    .shipping-cart{
+        align-items: center;
+        border-right: 4px solid $bg-color-dark;
+
+        .shipping-cart-image{
+            padding-right: 20px;
+            padding-left: 10px;
+
+            .shipping-cart-image-div{
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                line-height: 70px;
+                background-color: $primary-color;
+                text-align: center;
+            }
+        }
+        .shipping-caert-info{
+            h4{
+                color: $text-color;
+                font-family: $primary-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 30px; 
+            }
+            p{
+                color: $paragraph-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+
+                span{
+                    color: $primary-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+    .shipping-cart-last{
+        border: none;
+    }
+}
 
 
 // Shipping-Cart-Section-End

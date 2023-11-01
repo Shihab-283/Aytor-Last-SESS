@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./assets/vendors/css/slick.min.css">
     <!-- Common-css-link -->
     <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- venobox-css-link -->
+    <link rel="stylesheet" href="./assets/vendors/css/venobox.min.css.url">
     <!-- Main-css-link -->
     <link rel="stylesheet" href="./assets/css/style.min.css">
     <!-- Responsive-css-link -->
@@ -43,7 +45,7 @@
         <div class="container" style="position: relative;">
             <!-- <p style="position: absolute; top: -20px; left: 20px; color: var(--light-color);">sfdghvc</p> -->
             <span class="nav-evn-spn"><i class="fa-solid fa-xmark"></i></span>
-            <div class="nav-evnt-vh">
+            <div class="nav-evnt-vh d-flex">
                 <div class="cl-evn-box">
                     <div class="nav-evnt-frm">
                         <input type="text" class="nav-cl-event-input" placeholder="What are you looking for">
@@ -107,14 +109,77 @@
 
     <!-- Nav-Start -->
 
+    <!-- Big-Menu-Start -->
+
     <nav id="primary-nav" class="navbar navbar-expand-lg">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img src="./assets/images/Logo.png" alt="">
             </a>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_menu">
+            <!-- <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_menu">
                 <span class="navbar-toggler-icon"></span>
-            </button>
+            </button> -->
+            <!-- small-menu-Start -->
+           
+    <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      
+      <div class="offcanvas d-lg-none offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <a href="#"> <img src="./assets/images/Logo.png" alt=""></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="manu_name">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="item_name">
+            <li class="item_name_2"><a href="#"><i class="fa-regular fa-user"></i>Login / Register</a></li>
+            <li class="item_name_2"><a href="#"><i class="fa-regular fa-heart"></i>Wishlist</a></li>
+            <li class="last_item_name"><a href="#"><i class="fa-solid fa-bag-shopping"></i>Backet:<p style="color: var(--primary-color); display: inline-block;">$318.00</p></a></li>
+          </ul>
+          <div class="dropdown mt-3">
+           <ul class="d-flex justify-content-between">
+            <li>
+                <select name="Currency" id="">
+                    <option value=""selected>Currency</option>
+                    <option value="">USD</option>
+                    <option value="">BDT</option>
+                    <option value="">AED</option>
+                    <option value="">ERN</option>
+                    <option value="">EGP</option>
+                    <option value="">EUR</option>
+                    <option value="">GBP</option>
+                </select>
+            </li>
+            <span></span>
+            <li>
+                <select name="" id="">
+                    <option value=""selected>Language</option>
+                    <option value="">English</option>
+                    <option value="">Bangla</option>
+                    <option value="">German</option>
+                    <option value="">French</option>
+                    <option value="">Italian</option>
+                    <option value="">Latvian</option>
+                    <option value="">Spanish</option>
+                    <option value="">Greek</option>
+                </select>
+            </li>
+            <span></span>
+           </ul>
+          </div>
+        </div>
+      </div>
+      
+    <!-- small-menu-end -->
+
             <div class="collapse navbar-collapse" id="main_menu">
                 <ul class="navbar-nav mx-auto nav-pd">
                     <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
@@ -130,15 +195,133 @@
                     <li><a href="#" class="nav-4link"><i class="fa-solid fa-user"></i></a></li>
                     <li><a href="#" class="nav-4link"><i class="fa-solid fa-heart"></i></a></li>
                     <li class="nav-ntsh-pos">
-                        <button class="nav-22link" style="padding-right: 0;"><i class="fa-solid fa-bag-shopping"></i></button>
+                        <button class="nav-22link " style="padding-right: 0;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bag-shopping"></i></button>
                         <span class="nav-notification">4</span>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
 
+    <!-- Big-Menu-End -->
+
+    <!-- small-menu-Start -->
+           
+    <!-- <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      
+      <div class="offcanvas d-lg-none offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <a href="#"> <img src="./assets/images/Logo.png" alt=""></a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="manu_name">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <ul class="item_name">
+            <li class="item_name_2"><a href="#"><i class="fa-regular fa-user"></i>Login / Register</a></li>
+            <li class="item_name_2"><a href="#"><i class="fa-regular fa-heart"></i>Wishlist</a></li>
+            <li class="last_item_name"><a href="#"><i class="fa-solid fa-bag-shopping"></i>Backet:<p style="color: var(--primary-color); display: inline-block;">$318.00</p></a></li>
+          </ul>
+          <div class="dropdown mt-3">
+           <ul class="d-flex justify-content-between">
+            <li>
+                <select name="Currency" id="">
+                    <option value=""selected>Currency</option>
+                    <option value="">USD</option>
+                    <option value="">BDT</option>
+                    <option value="">AED</option>
+                    <option value="">ERN</option>
+                    <option value="">EGP</option>
+                    <option value="">EUR</option>
+                    <option value="">GBP</option>
+                </select>
+            </li>
+            <span></span>
+            <li>
+                <select name="" id="">
+                    <option value=""selected>Language</option>
+                    <option value="">English</option>
+                    <option value="">Bangla</option>
+                    <option value="">German</option>
+                    <option value="">French</option>
+                    <option value="">Italian</option>
+                    <option value="">Latvian</option>
+                    <option value="">Spanish</option>
+                    <option value="">Greek</option>
+                </select>
+            </li>
+            <span></span>
+           </ul>
+          </div>
+        </div>
+      </div> -->
+      
+    <!-- small-menu-end -->
+
+
+
+
+
+
+
+    <!-- Right Toggle canvas start -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping cart</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-flex item">
+            <img src="./assets/images/right_img_1.webp" alt="">
+            <ul>
+               <li><a href="#">Jacket Hoddie</a> </li>
+               <li class="item_cost">1 × $40.00</li>
+            </ul>
+            <i class="fa-regular fa-trash-can"></i>
+        </div>
+        <div class="d-flex item">
+           <img src="./assets/images/right_img_2.webp" alt="">
+           <ul>
+               <li><a href="#">Sports Shoes</a> </li>
+               <li class="item_cost">1 × $99.00</li>
+           </ul>
+           <i class="fa-regular fa-trash-can" style="margin-left: 168px;"></i>
+        </div>
+        <div class="d-flex item">
+           <img src="./assets/images/right_img_3.webp" alt="">
+           <ul>
+               <li><a href="#">Smart Watch</a> </li>
+               <li class="item_cost">1 × $56.00</li>
+           </ul>
+           <i class="fa-regular fa-trash-can" style="margin-left: 167px;"></i>
+        </div>
+        <div class="d-flex item">
+           <img src="./assets/images/right_img_4.webp" alt="">
+           <ul>
+               <li><a href="#">Bluetooth Speaker</a> </li>
+               <li class="item_cost">1 × $23.00</li>
+           </ul>
+           <i class="fa-regular fa-trash-can" style="margin-left: 130px;"></i>
+        </div>
+        <p><strong>Subtotal:</strong> <span>$318.00</span></p>
+        <div class="button">
+           <button><a href="#">View Cart</a></button>
+           <button><a href="#">Checkout</a></button>
+        </div>
+        </div>
+   </div>
+   <!-- Right Toggle canvas start -->
+
+    
 
     <!-- Nav-End -->
 
@@ -457,57 +640,62 @@
                 </div>
             </div>
             <div class="row">
-                <div class=" col-lg-3 product my-3">
-                    <div class="product-img">
-                        <img src="./assets/images/featured-2-1.jpg" alt="" class="img-fluid">
-                        <img src="./assets/images/featured-2-1h.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="product-info">
-                        <h6><ins>$150.65</ins><del>$250.00</del></h6>
-                        <h5>Lotion Shower gel</h5>
-                        <ul class="d-flex">
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <div class="product-action">
-                        <ul>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class=" col-lg-3 product my-3">
-                    <div class="product-img">
-                        <img src="./assets/images/featured-2-2.jpg" alt="" class="img-fluid">
-                        <img src="./assets/images/featured-2-2h.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="product-info">
-                        <h6><ins>$150.65</ins><del>$250.00</del></h6>
-                        <h5>Lotion Shower gel</h5>
-                        <ul class="d-flex">
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <div class="product-action">
-                        <ul>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
-                        </ul>
+                <div class=" col-lg-3 my-3">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="./assets/images/featured-2-1.jpg" alt="" class="img-fluid">
+                            <img src="./assets/images/featured-2-1h.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h6><ins>$150.65</ins><del>$250.00</del></h6>
+                            <h5>Lotion Shower gel</h5>
+                            <ul class="d-flex">
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product-action">
+                            <ul>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class=" col-lg-3 product my-3">
+                <div class=" col-lg-3 my-3">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="./assets/images/featured-2-2.jpg" alt="" class="img-fluid">
+                            <img src="./assets/images/featured-2-2h.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h6><ins>$150.65</ins><del>$250.00</del></h6>
+                            <h5>Lotion Shower gel</h5>
+                            <ul class="d-flex">
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product-action">
+                            <ul>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 my-3">
+                   <div class="product">
                     <div class="product-img">
                         <img src="./assets/images/featured-2-3.jpg" alt="" class="img-fluid">
                         <img src="./assets/images/featured-2-3h.jpg" alt="" class="img-fluid">
@@ -531,58 +719,64 @@
                             <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
                         </ul>
                     </div>
+                   </div>
                 </div>
-                <div class=" col-lg-3 product my-3">
-                    <div class="product-img">
-                        <img src="./assets/images/featured-2-4.jpg" alt="" class="img-fluid">
-                        <img src="./assets/images/featured-2-4h.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="product-info">
-                        <h6><ins>$150.65</ins><del>$250.00</del></h6>
-                        <h5>Lotion Shower gel</h5>
-                        <ul class="d-flex">
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <div class="product-action">
-                        <ul>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class=" col-lg-3 product my-3">
-                    <div class="product-img">
-                        <img src="./assets/images/featured-2-5.jpg" alt="" class="img-fluid">
-                        <img src="./assets/images/featured-2-5h.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="product-info">
-                        <h6><ins>$150.65</ins><del>$250.00</del></h6>
-                        <h5>Lotion Shower gel</h5>
-                        <ul class="d-flex">
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <div class="product-action">
-                        <ul>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
-                        </ul>
+                <div class=" col-lg-3 my-3">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="./assets/images/featured-2-4.jpg" alt="" class="img-fluid">
+                            <img src="./assets/images/featured-2-4h.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h6><ins>$150.65</ins><del>$250.00</del></h6>
+                            <h5>Lotion Shower gel</h5>
+                            <ul class="d-flex">
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product-action">
+                            <ul>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class=" col-lg-3 product my-3">
+                <div class=" col-lg-3 my-3">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="./assets/images/featured-2-5.jpg" alt="" class="img-fluid">
+                            <img src="./assets/images/featured-2-5h.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h6><ins>$150.65</ins><del>$250.00</del></h6>
+                            <h5>Lotion Shower gel</h5>
+                            <ul class="d-flex">
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product-action">
+                            <ul>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-3 my-3">
+                   <div class="product">
                     <div class="product-img">
                         <img src="./assets/images/featured-2-6.jpg" alt="" class="img-fluid">
                         <img src="./assets/images/featured-2-6h.jpg" alt="" class="img-fluid">
@@ -606,8 +800,10 @@
                             <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
                         </ul>
                     </div>
+                   </div>
                 </div>
-                <div class=" col-lg-3 product my-3">
+                <div class=" col-lg-3 my-3">
+                   <div class="product">
                     <div class="product-img">
                         <img src="./assets/images/featured-2-3.jpg" alt="" class="img-fluid">
                         <img src="./assets/images/featured-2-3h.jpg" alt="" class="img-fluid">
@@ -631,30 +827,33 @@
                             <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
                         </ul>
                     </div>
+                   </div>
                 </div>
-                <div class=" col-lg-3 product my-3">
-                    <div class="product-img">
-                        <img src="./assets/images/featured-2-2.jpg" alt="" class="img-fluid">
-                        <img src="./assets/images/featured-2-2h.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="product-info">
-                        <h6><ins>$150.65</ins><del>$250.00</del></h6>
-                        <h5>Lotion Shower gel</h5>
-                        <ul class="d-flex">
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                            <li><i class="fa-regular fa-star"></i></li>
-                        </ul>
-                    </div>
-                    <div class="product-action">
-                        <ul>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
-                            <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
-                        </ul>
+                <div class=" col-lg-3 my-3">
+                    <div class="product">
+                        <div class="product-img">
+                            <img src="./assets/images/featured-2-2.jpg" alt="" class="img-fluid">
+                            <img src="./assets/images/featured-2-2h.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h6><ins>$150.65</ins><del>$250.00</del></h6>
+                            <h5>Lotion Shower gel</h5>
+                            <ul class="d-flex">
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                                <li><i class="fa-regular fa-star"></i></li>
+                            </ul>
+                        </div>
+                        <div class="product-action">
+                            <ul>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Cart" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-cart-plus"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add To Wishlist" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-heart"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Quickvew" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-eye"></i></button></li>
+                                <li><button type="button"data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title=" Compaire" data-bs-custom-class="product-action-tooltip"><i class="fa-solid fa-signal"></i></button></li>
+                            </ul>
+                        </div>
                     </div>
                 </div> 
             </div>
@@ -740,7 +939,7 @@
 
     <!-- Shine-In-Life-Section-Start -->
 
-    <section id="shine-life">
+    <section id="shine-life" style="position: relative;">
         <div class="container">
             <div class="row">
                 <div class="shine-life-info col-lg-6">
@@ -751,7 +950,14 @@
                     <a href="#">Shop Now <i class="fa-solid fa-arrow-right banner-btm"></i></a>
                 </div>
                 <div class="shine-life-image col-lg-6">
-                    
+                    <div style="position: absolute; width: 50%; height: 100%;top: 0; right: 0;">
+                        <img src="./assets/images/Mask here.png" alt="" class="img-fluid"
+                            style="object-fit: cover; object-position: center; height: 100%; width: 100%;">
+                        <a href="https://youtu.be/dpvd9FensT8?si=NcIboho8_sKlXRck" data-autoplay="true"
+                            data-vbtype="video" class="venobox play-btn">
+                            <i class="fa-solid fa-play"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -881,7 +1087,65 @@
 
     <!-- Shipping-Cart-Section-Start -->
 
-
+    <section id="shipping">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="shipping-cart d-flex">
+                        <div class="shipping-cart-image">
+                            <img src="./assets/images/shipping-cart1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="shipping-caert-info">
+                            <h4>FREE SHIPING</h4>
+                            <p>all orders over <span>$150</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="shipping-cart d-flex">
+                        <div class="shipping-cart-image">
+                            <div class="shipping-cart-image-div">
+                                <img src="./assets/images/shipping-cart2.png" alt="">
+                            </div>
+                            <!-- <img src="./assets/images/shipping-cart1.png" alt="" class="img-fluid"> -->
+                        </div>
+                        <div class="shipping-caert-info">
+                            <h4>QUICK PAYMENT</h4>
+                            <p>100% secure payment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="shipping-cart d-flex">
+                        <div class="shipping-cart-image">
+                            <div class="shipping-cart-image-div">
+                                <img src="./assets/images/shopping-cart3.png" alt="">
+                            </div>
+                            <!-- <img src="./assets/images/shipping-cart1.png" alt="" class="img-fluid"> -->
+                        </div>
+                        <div class="shipping-caert-info">
+                            <h4>FREE RETURNS</h4>
+                            <p>Money back in 30 days</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="shipping-cart d-flex shipping-cart-last">
+                        <div class="shipping-cart-image">
+                            <div class="shipping-cart-image-div">
+                                <img src="./assets/images/shipping-cart4.png" alt="">
+                            </div>
+                            <!-- <img src="./assets/images/shipping-cart1.png" alt="" class="img-fluid"> -->
+                        </div>
+                        <div class="shipping-caert-info">
+                            <h4>24/7 SUPPORT</h4>
+                            <p>Quick Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
 
     <!-- Shipping-Cart-Section-End -->
@@ -1039,6 +1303,8 @@
     <script src="./assets/vendors/js/slick.min.js"></script>
     <!-- count-down-link -->
      <script src="./assets/vendors/js/jquery.countdown.min.js"></script>
+     <!-- venobox-link -->
+    <script src="./assets/vendors/js/venobox.min.js.url"></script>
     <!-- Main-link -->
     <script src="./assets/js/app.js"></script>
 </body>
