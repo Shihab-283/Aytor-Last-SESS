@@ -38,6 +38,26 @@ $(document).ready(function(){
         prevArrow:'<i class="fa-solid fa-chevron-left new-product-slider-arrow"></i>',
         nextArrow:'<i class="fa-solid fa-chevron-right new-product-slider-arrow"></i>',
         autoplay:true,
+        resposive:[
+          {
+            breakpoint:1200,
+            settings:{
+              slidesToShow:3,
+            }
+          },
+          {
+            breakpoint:992,
+            settings:{
+              slidesToShow:2,
+            }
+          },
+          {
+            breakpoint:576,
+            settings:{
+              slidesToShow:1,
+            }
+          }
+        ]
       });
 
 
@@ -58,12 +78,33 @@ $(document).ready(function(){
           arrows:false,
           dots:true,
           slidesToShow: 2,
+          
       })
       // Latest News Slider
       $('.latest_slider').slick({
           arrows:false,
           dots: true,
-          slidesToShow:4,
+          slidesToShow: 3,
+          resposive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+          ]
       })
        // BackToTop Button
     $(window).on('scroll',function() {

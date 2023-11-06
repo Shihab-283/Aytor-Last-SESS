@@ -13,6 +13,10 @@ body{
     font-weight: 700;
     line-height: 46px;
     margin-bottom: 36px;
+    // @include lg(){
+    //     line-height: 46px;
+    //     margin-bottom: -46px;
+    // }
 }
 
 
@@ -280,6 +284,10 @@ footer .footer_lower .widget table tr {
     font-family: $body-font;
     font-size: 16px;
     line-height: 28px;
+
+    @include xl(){
+        font-size: 14px;
+    }
 }
 footer .footer_lower .widget table tr th {
     padding-right: 18px;
@@ -314,6 +322,12 @@ footer .footer_lower .widget.widget-8 input {
     padding: 11px 10px;
     line-height: 28px;
     font-family: $body-font;
+    @include xl(){
+        padding: 7px;
+    }
+    @include lg(){
+        padding: 12px 25px;
+    }
 }
 footer .footer_lower .widget.widget-8 button {
     border: none;
@@ -323,6 +337,11 @@ footer .footer_lower .widget.widget-8 button {
     line-height: 30px;
     background: $primary-color;
     padding: 8px 17px;
+
+    @include xl(){
+        padding: 3px;
+        font-size: 10px;
+    }
 }
 
 /* =========== Footer Section Css End =========== */

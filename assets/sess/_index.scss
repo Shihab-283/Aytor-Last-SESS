@@ -2,6 +2,15 @@
 #top-bar{
     background-color: $primary-color-3d;
     padding: 11px 0;
+    @include md(){
+        display: none;
+    }
+    @include sm(){
+        display: none;
+    }
+    @include xs(){
+        display: none;
+    }
 }
 /* #top-bar .container .row .col-lg-6 p .fa-solid fa-paper-plane{
     background-color: var(#FF6F61) !important;
@@ -206,6 +215,12 @@
 
 #banner .banner-slider-item{
     height: 800px;
+    @include lg(){
+        height: 500px;
+    }
+    @include md(){
+        height: 650px;
+    }
     background-size: cover !important;
     background-position: center !important;
 }
@@ -215,6 +230,21 @@
     position: absolute;
     left: 313px;
     bottom: 200px;
+    @include xxl(){
+        left: 25%;
+    }
+    @include xl(){
+        bottom: 20%;
+        left: 4%;
+    }
+    @include lg(){
+        bottom: 15%;
+        left: 3%;
+    }
+    @include md(){
+        left: 5%;
+        bottom: 22%;
+    }
 }
 
 #banner .banner-slider .slick-dots li{
@@ -255,6 +285,14 @@
     font-style: normal;
     font-weight: 700;
     line-height: 74px;
+    @include lg(){
+        font-size: 49px;
+        line-height: 62px;
+    }
+    @include md(){
+        font-size: 49px;
+        line-height: 62px;
+    }
 }
 
 #banner .banner-slider .banner-slider-item .container p{
@@ -280,6 +318,19 @@
     font-weight: 600;
     line-height: 30px;
     transition: .5s;
+    @include lg(){
+        padding-right: 35px;
+        padding-left: 32px;
+        padding-top: 16px;
+        padding-bottom: 17px;
+    }
+    @include md(){
+        padding-right: 35px;
+        padding-left: 32px;
+        padding-top: 16px;
+        padding-bottom: 17px;
+    }
+    
 }
 #banner .banner-slider .banner-slider-item .container a:hover{
     color: $primary-color;
@@ -305,6 +356,7 @@
 }
 #beauty-cream .col-lg-5 .cream-img-3{
     margin-left: 24px;
+    
 }
 
 .cream-img-1{
@@ -315,6 +367,9 @@
 }
 .cream-img-3{
     position: relative;
+    @include md(){
+        margin-top: 24px;
+    }
 }
 .overlay-beauty-cream{
     position: absolute;
@@ -322,20 +377,32 @@
     z-index: 97;
     text-align: center;
     color: $light-color;
-    width: 496px;
-    height: 260px;
-    left: 20px;
-    top: 20px;
-    padding-top: 94px;
+    // width: 496px;
+    // height: 260px;
+    // left: 20px;
+    // top: 20px;
+    inset: 20px;
+    // padding-top: 94px;
     transition: .5s;
     transform: scale(0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include md(){
+    //   inset: 24px;
+      right: 190px;
+    }
 }
 .col-lg-7 .overlay-beauty-cream{
-    padding-top: 260px;
-    width: 710px;
-    height: 591px;
-    left: 23px;
-    top: 15px;
+    // padding-top: 260px;
+    // width: 710px;
+    // height: 591px;
+    // left: 23px;
+    // top: 15px;
+    inset: 20px;
+    @include md(){
+        inset: 20px;
+    }
 }
 .cream-img-1:hover .overlay-beauty-cream{
     transform: scale(1);
@@ -364,24 +431,24 @@
     line-height: 28px; 
     transition: .5s;
 }
-.overlay-beauty-cream a::before{
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    left: 40%;
-    bottom: 94px;
-    background-color: $primary-color;
-    transition: .5s;
-}
-.overlay-beauty-cream a:hover::before{
-    width: 97px;
+// .overlay-beauty-cream a::before{
+//     content: '';
+//     position: absolute;
+//     width: 0%;
+//     height: 2px;
+//     left: 40%;
+//     bottom: 94px;
+//     background-color: $primary-color;
+//     transition: .5s;
+// }
+// .overlay-beauty-cream a:hover::before{
+//     width: 97px;
     
-}
-.col-lg-7 .overlay-beauty-cream a::before{
-    left: 43.5%;
-    bottom: 44%;
-}
+// }
+// .col-lg-7 .overlay-beauty-cream a::before{
+//     left: 43.5%;
+//     bottom: 44%;
+// }
 .overlay-beauty-cream h3:hover{
     color: $primary-color;
 }
@@ -452,6 +519,10 @@
     background-position: center;
     padding-top: 110px;
     padding-bottom: 110px;
+    @include lg(){
+        padding-top: 59px;
+        padding-bottom: 79px;
+    }
     text-align: left;
     margin-bottom: 100px;
     h2{
@@ -462,6 +533,10 @@
         line-height: 46px;
         padding-bottom: 40px;
         font-family: $primary-font;
+        @include lg(){
+            font-size: 30px;
+            padding-bottom: 14px;
+        }
     }
     p{
         color: $light-color;
@@ -470,7 +545,12 @@
         font-style: normal;
         font-weight: 400;
         line-height: 28px;
-        padding-bottom: 50px
+        padding-bottom: 50px;
+        @include lg(){
+            font-size: 15px;
+            padding-bottom: 40px;
+        }
+        
     }
     a{
         padding-right: 40px;
@@ -565,10 +645,13 @@
 //     }
 // }
 #deals{
-    position: relative;
+    // position: relative;
     margin-bottom: 85px;
     .section_heading{
         margin-bottom: 82px;
+        @include lg(){
+            margin-bottom: 0px;
+        }
         color: $text-color;
         text-align: center;
         font-family: $primary-font;
@@ -579,14 +662,17 @@
         // margin-bottom: 36px;
     }
     .deals_countdown{
-        position: absolute;
+        // position: absolute;
         background-color: $light-color;
         border-radius: 60px;
         box-shadow: 0px 0px 10px 0px rgba(21, 26, 50, 0.10);
         padding: 7px 79px;
-        z-index: 97;
-        top: 110px;
-        left: 34%;
+        transform: translateY(50%);
+        position: relative;
+        z-index: 95;
+        // z-index: 97;
+        // top: 110px;
+        // left: 34%;
         div{
             h4{
                 color: $text-color;
@@ -613,16 +699,19 @@
     .deals_slider{
         background-color: $light-color;
         box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
-        height: 646px;
-        width: 1320px;
+        // height: 646px;
+        // width: 1320px;
         top: -50%;
 
         .deals_slider_item{
             width: 570px;
             height: 485px;
+            @include lg(){
+                height: 400px;
+            }
             background-size: cover !important;
             background-position: center !important;
-            margin: 75px 38px 86px 39px;
+            margin: 75px 18px 86px 39px;
             .deals_content{
                 margin-top: 35px;
                 margin-left: 40px;
@@ -637,6 +726,9 @@
                     color: $text-color;
                     font-family: $primary-font;
                     font-size: 36px;
+                    @include lg(){
+                        font-size: 25px;
+                    }
                     font-weight: 700;
                     line-height: 46px;
                     margin: 10px 0 16px 0;
@@ -645,6 +737,10 @@
                     color: $paragraph-color;
                     font-family: $body-font;
                     font-size: 16px;
+                    @include lg(){
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
                     font-weight: 400;
                     line-height: 28px;
                 }
@@ -686,9 +782,8 @@
         }
         .slick-dots {
             display: flex;
-            position: absolute;
-            bottom: 40px;
-            left: 48%;
+            justify-content: center;
+            transform: translateY(-40px);
             li {
                 line-height: 0;
                 margin-right: 5px;
@@ -794,6 +889,9 @@
         h2{
             color: $text-color;
             font-size: 36px;
+            @include lg(){
+                font-size: 26px;
+            }
             font-style: normal;
             font-weight: 700;
             line-height: 46px; 
@@ -803,6 +901,9 @@
             color: $paragraph-color;
             font-family: $body-font;
             font-size: 16px;
+            @include lg(){
+                font-size: 14px;
+            }
             font-style: normal;
             font-weight: 400;
             line-height: 28px;
@@ -821,6 +922,10 @@
             font-weight: 600;
             line-height: 30px;
             transition: .5s;
+            @include lg(){
+                padding-left: 24px;
+                padding-right: 30px;
+            }
 
             .fa-arrow-right{
                 padding-left: 5px;
@@ -879,9 +984,7 @@
     .latest_slider{
         .slick-dots {
             display: flex;
-            position: absolute;
-            bottom: -35px;
-            left: 46%;
+            justify-content: center;
             li {
                 line-height: 0;
                 margin-right: 5px;
@@ -976,20 +1079,24 @@
 
 
 #shipping{
-    position: relative;
+    // position: relative;
+
+
+    // margin-bottom: 20px;
     .container{
         padding: 30px 38px;
         // background-color: red;
         background: $light-color;
         box-shadow: 0px 0px 50px 0px rgba(21, 26, 50, 0.10);
-        position: absolute;
-        left: 300px;
-        top: -65px;
-        z-index: 96;
+        // position: absolute;
+        // left: 300px;
+        // top: -65px;
+        // z-index: 96;
     }
     .shipping-cart{
         align-items: center;
         border-right: 4px solid $bg-color-dark;
+        
 
         .shipping-cart-image{
             padding-right: 20px;
@@ -1009,6 +1116,9 @@
                 color: $text-color;
                 font-family: $primary-font;
                 font-size: 20px;
+                @include lg(){
+                    font-size: 11px;
+                }
                 font-style: normal;
                 font-weight: 600;
                 line-height: 30px; 
@@ -1020,6 +1130,9 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 28px;
+                @include lg(){
+                    font-size: 11px;
+                }
 
                 span{
                     color: $primary-color;
@@ -1028,6 +1141,9 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 28px;
+                    @include lg(){
+                        font-size: 11px;
+                    }
                 }
             }
         }
