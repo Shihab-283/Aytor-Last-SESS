@@ -42,11 +42,17 @@ $(document).ready(function(){
           {
             breakpoint:1200,
             settings:{
-              slidesToShow:3,
+              slidesToShow:4,
             }
           },
           {
             breakpoint:992,
+            settings:{
+              slidesToShow:4,
+            }
+          },
+          {
+            breakpoint:768,
             settings:{
               slidesToShow:2,
             }
@@ -54,7 +60,7 @@ $(document).ready(function(){
           {
             breakpoint:576,
             settings:{
-              slidesToShow:1,
+              slidesToShow:2,
             }
           }
         ]
@@ -78,6 +84,14 @@ $(document).ready(function(){
           arrows:false,
           dots:true,
           slidesToShow: 2,
+          resposive:[
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              }
+            }
+          ]
           
       })
       // Latest News Slider

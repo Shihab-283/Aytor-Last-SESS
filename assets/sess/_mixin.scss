@@ -87,6 +87,9 @@
     }
     &:hover .product-action{
         right: 17px;
+        // @include md(){
+        //     right: 190px;
+        // }
     }
 }
 

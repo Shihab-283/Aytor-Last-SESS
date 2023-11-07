@@ -251,6 +251,26 @@ footer .footer_upper .widget-1 ul li a:hover {
     background-color: $primary-color;
     color: $light-color;
 }
+.widget-2{
+    @include md(){
+        text-align: left !important;
+        padding-top: 15px; 
+    }
+    @include sm(){
+        text-align: left !important;
+        padding-top: 15px; 
+    }
+}
+.widget-3{
+    @include md(){
+        margin-right: auto !important;
+        padding-top: 15px; 
+    }
+    @include sm(){
+        margin-right: auto !important;
+        padding-top: 15px; 
+    }
+}
 footer .footer_lower {
     color: $text-color;
     padding: 70px 0;
@@ -328,6 +348,12 @@ footer .footer_lower .widget.widget-8 input {
     @include lg(){
         padding: 12px 25px;
     }
+    @include md(){
+        padding: 13px 101px;
+    }
+    @include sm(){
+        padding: 11px 88px;
+    }
 }
 footer .footer_lower .widget.widget-8 button {
     border: none;
@@ -341,6 +367,9 @@ footer .footer_lower .widget.widget-8 button {
     @include xl(){
         padding: 3px;
         font-size: 10px;
+    }
+    @include md(){
+        padding: 10px 94px;
     }
 }
 
