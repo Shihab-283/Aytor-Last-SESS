@@ -184,19 +184,19 @@ $(document).ready(function(){
               }
             },
             {
-              breakpoint: 450,
-              settings: {
-                slidesToShow: 1,
-                
-              }
-            },
-            {
-              breakpoint: 320,
+              breakpoint: 430,
               settings: {
                 slidesToShow: 1,
                 
               }
             }
+            // {
+            //   breakpoint: 320,
+            //   settings: {
+            //     slidesToShow: 1,
+                
+            //   }
+            // }
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
             // instead of a settings object
