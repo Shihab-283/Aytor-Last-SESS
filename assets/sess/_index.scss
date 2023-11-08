@@ -225,7 +225,7 @@
         height: 600px;
     }
     @include xs(){
-        height: 550px;
+        height: 450px;
     }
     background-size: cover !important;
     background-position: center !important;
@@ -257,7 +257,7 @@
     }
     @include xs(){
         left: 13px;
-        bottom: 89px;
+        bottom: 48px;
     }
 }
 
@@ -312,8 +312,8 @@
         line-height: 62px;
     }
     @include xs(){
-        font-size: 49px;
-        line-height: 63px;
+        font-size: 32px;
+        line-height: 42px;
     }
 }
 
@@ -327,6 +327,10 @@
     margin-bottom: 36px;
     @include sm(){
         line-height: 25px;
+    }
+    @include xs(){
+        font-size: 14px;
+        line-height: 24px;
     }
 }
 
@@ -361,6 +365,12 @@
         padding-top: 18px;
         padding-bottom: 19px;
     }
+    @include xs(){
+        padding-right: 15px;
+        padding-left: 10px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
     
 }
 #banner .banner-slider .banner-slider-item .container a:hover{
@@ -370,6 +380,10 @@
 
 #banner .banner-slider .banner-slider-item .container a .banner-btm{
     padding-left: 8.9px;
+
+    @include xs(){
+        padding-left: 3px;
+    }
 }
 /* Banner-Section-End */
 
@@ -689,6 +703,15 @@
     margin-top: 20px;
     // margin-bottom: 100px;
 
+    @include xs(){
+        padding-right: 8px;
+        padding-left: 6px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
 
 
 
@@ -698,6 +721,10 @@
     
     .fa-arrow-right{
         padding-left: 10px;
+
+        @include xs(){
+            padding-left: 5px;
+        }
     }
 
     // &:hover{
@@ -805,6 +832,11 @@
                     font-size: 18px;
                     font-weight: 600;
                     line-height: 28px; 
+                    
+                    @include xs(){
+                        font-size: 17px;
+                        // line-height: 13px;
+                    }
                 }
                 h2{
                     color: $text-color;
@@ -812,6 +844,10 @@
                     font-size: 36px;
                     @include lg(){
                         font-size: 25px;
+                    }
+                    @include xs(){
+                        font-size: 29px;
+                        margin: 0;
                     }
                     font-weight: 700;
                     line-height: 46px;
@@ -824,6 +860,10 @@
                     @include lg(){
                         font-size: 14px;
                         line-height: 24px;
+                    }
+                    @include xs(){
+                        font-size: 13px;
+                        line-height: 22px;
                     }
                     font-weight: 400;
                     line-height: 28px;
@@ -838,6 +878,9 @@
                         line-height: 30px; 
                         text-decoration: none;
                         margin-right: 13px;
+                        @include xs(){
+                            // margin: 0px 9px 0px 9px;
+                        }
                     }
                     del{
                         color: $paragraph-color;
@@ -858,6 +901,9 @@
                     padding: 13px 27px;
                     background-color: $primary-color;
                     cursor: pointer;
+                    @include xs(){
+                        padding: 16px 16px;
+                    }
                     i{
                         margin-left: 5px;
                     }
@@ -967,6 +1013,9 @@
         @include sm(){
             padding-right: 263px;
         }
+        @include xs(){
+            padding-right: 0;
+        }
         h6{
             color: $paragraph-color;
             font-size: 16px;
@@ -994,6 +1043,11 @@
                 line-height: 38px;
                 padding-bottom: 6px;
             }
+            @include xs(){
+                font-size: 30px;
+                // line-height: 38px;
+                padding-bottom: 10px;
+            }
             font-style: normal;
             font-weight: 700;
             line-height: 46px; 
@@ -1011,6 +1065,12 @@
                 line-height: 23px;
                 padding-bottom: 27px;
             }
+            @include xs(){
+                font-size: 12px;
+                line-height: 22px;
+                // padding-bottom: 27px;
+            }
+            
 
             font-style: normal;
             font-weight: 400;
@@ -1040,6 +1100,12 @@
                 padding-bottom: 14px;
                 padding-top: 16px;
             }
+            @include xs(){
+                padding-right: 21px;
+                padding-left: 18px;
+                padding-bottom: 15px;
+                padding-top: 15px;
+            }
 
             .fa-arrow-right{
                 padding-left: 5px;
@@ -1066,6 +1132,10 @@
                 transform: translateX(-50%);
                 transition: .5s;
 
+                @include xs(){
+                    top: 40%;
+                }
+
                 &:hover{
                     background-color: $primary-color;
                     color: $light-color;
@@ -1073,6 +1143,18 @@
             }
         }
 
+    }
+}
+
+.shine-life-image-position{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    @include xs(){
+        position: relative;
+        width: 100%;
     }
 }
 
@@ -1094,7 +1176,7 @@
 // Latest-News-Section-Start
 
 #latest{
-    margin-bottom: 150px;
+    margin-bottom: 0px;
     .latest_slider{
         .slick-dots {
             display: flex;
@@ -1214,9 +1296,11 @@
     // position: relative;
 
 
-    // position: relative;
-    // z-index: 95;
-    // transform: translateY(150%);
+    position: relative;
+    z-index: 95;
+    transform: translateY(50%);
+
+
     // margin-bottom: 130px;
 
 
@@ -1241,6 +1325,7 @@
         }
         @include xs(){
             padding-bottom: 15px;
+            border: none;
         }
         
 
@@ -1268,6 +1353,9 @@
                 }
                 @include lg(){
                     font-size: 11px;
+                }
+                @include xs(){
+                    font-size: 18px;
                 }
                 font-style: normal;
                 font-weight: 600;

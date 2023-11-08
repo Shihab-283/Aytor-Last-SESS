@@ -30,6 +30,11 @@ body{
     font-weight: 700;
     line-height: 46px;
     margin-bottom: 36px;
+    
+    @include xs(){
+        font-size: 32px;
+        line-height: 14px;
+    }
 }
 
 /* Right Toggle Canvas */
@@ -228,6 +233,7 @@ body{
 /* =========== Footer Css Start=========== */
 footer {
     background-color: $text-color;
+    padding-top: 200px;
 }
 footer .footer_upper {
     border-bottom: 1px solid $paragraph-color;
@@ -277,6 +283,18 @@ footer .footer_upper .widget-1 ul li a:hover {
     @include xs(){
         // margin-right: auto !important;
         padding-top: 15px;
+    }
+}
+
+.icon-social{
+    @include md(){
+        justify-content: center !important;
+    }
+    @include sm(){
+        justify-content: center !important;
+    }
+    @include xs(){
+        justify-content: center !important;
     }
 }
 
@@ -359,7 +377,7 @@ footer .footer_lower .widget.widget-8 p {
 footer .footer_lower .widget.widget-8 form {
     background-color: $light-color;
     @include xs(){
-        width: 50%;
+        width: 90%;
     }
 }
 footer .footer_lower .widget.widget-8 input {
@@ -381,6 +399,11 @@ footer .footer_lower .widget.widget-8 input {
         padding: 11px 88px;
     }
 }
+.fother-input-width{
+    @include xs(){
+        width: 100%;
+    }
+}
 footer .footer_lower .widget.widget-8 button {
     border: none;
     color: $light-color;
@@ -397,6 +420,11 @@ footer .footer_lower .widget.widget-8 button {
     @include md(){
         padding: 10px 94px;
     }
+    @include xs(){
+        padding: 8px 11px;
+        font-size: 15px;
+    }
+
 }
 
 /* =========== Footer Section Css End =========== */
@@ -421,6 +449,12 @@ footer .footer_lower .widget.widget-8 button {
 
 /* =========== Back To Top Button Css Start =========== */
 #backToTop{
+    
+    // :hover{
+    //     background-color: $text-color;
+    //     color: $light-color;
+    // }
+    
     width: 60px;
     height: 60px;
     line-height: 52px;
@@ -436,6 +470,12 @@ footer .footer_lower .widget.widget-8 button {
     right: 55px;
     bottom: 40px;
     display: none;
+    z-index: 105;
+    
+    
+    @include xs(){
+        right: 20px;
+    }
 }
 
 

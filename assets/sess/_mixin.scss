@@ -4,7 +4,7 @@
     border: 1px solid $bg-color-dark;
     overflow: hidden;
     @include xs(){
-        width: 50%;
+        width: 60%;
         margin: auto;
     }
     .product-img{
@@ -69,6 +69,9 @@
         }
         @include md(){
             top: 15px;
+        }
+        @include xs(){
+            top: 12px;
         }
         z-index: 99;
         transition: .5s;
