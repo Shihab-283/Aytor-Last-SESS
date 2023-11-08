@@ -3,6 +3,10 @@
     text-align: center;
     border: 1px solid $bg-color-dark;
     overflow: hidden;
+    @include xs(){
+        width: 50%;
+        margin: auto;
+    }
     .product-img{
         position: relative;
 

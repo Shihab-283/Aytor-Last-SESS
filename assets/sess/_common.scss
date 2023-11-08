@@ -253,24 +253,47 @@ footer .footer_upper .widget-1 ul li a:hover {
 }
 .widget-2{
     @include md(){
-        text-align: left !important;
+        text-align: center !important;
         padding-top: 15px; 
     }
     @include sm(){
-        text-align: left !important;
+        text-align: center !important;
+        padding-top: 15px; 
+    }
+    @include xs(){
+        text-align: center !important;
         padding-top: 15px; 
     }
 }
 .widget-3{
     @include md(){
-        margin-right: auto !important;
+        // margin-right: auto !important;
         padding-top: 15px; 
     }
     @include sm(){
-        margin-right: auto !important;
+        // margin-right: auto !important;
         padding-top: 15px; 
     }
+    @include xs(){
+        // margin-right: auto !important;
+        padding-top: 15px;
+    }
 }
+
+.cradit-respn{
+    @include md(){
+        margin: auto !important;
+    }
+
+    @include sm(){
+        margin: auto !important;
+    }
+
+    @include xs(){
+        margin: auto !important;
+    }
+}
+
 footer .footer_lower {
     color: $text-color;
     padding: 70px 0;
@@ -335,6 +358,9 @@ footer .footer_lower .widget.widget-8 p {
 }
 footer .footer_lower .widget.widget-8 form {
     background-color: $light-color;
+    @include xs(){
+        width: 50%;
+    }
 }
 footer .footer_lower .widget.widget-8 input {
     background: none;

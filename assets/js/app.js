@@ -32,39 +32,204 @@ $(document).ready(function(){
 
       // Banner-slider-slick-End
 
-      // New-product-slider
-      $('.new-product-slider').slick({
-        slidesToShow:4,
-        prevArrow:'<i class="fa-solid fa-chevron-left new-product-slider-arrow"></i>',
-        nextArrow:'<i class="fa-solid fa-chevron-right new-product-slider-arrow"></i>',
-        autoplay:true,
-        resposive:[
-          {
-            breakpoint:1200,
-            settings:{
-              slidesToShow:4,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+     // New-product-slider-start
+
+
+
+
+      // $('.new-product-slider').slick({
+      //   slidesToShow:4,
+      //   prevArrow:'<i class="fa-solid fa-chevron-left new-product-slider-arrow"></i>',
+      //   nextArrow:'<i class="fa-solid fa-chevron-right new-product-slider-arrow"></i>',
+      //   autoplay:true,
+      //   resposive:[
+      //     {
+      //       breakpoint:1200,
+      //       settings:{
+      //         slidesToShow:4,
+      //       }
+      //     },
+      //     {
+      //       breakpoint:992,
+      //       settings:{
+      //         slidesToShow:4,
+      //       }
+      //     },
+      //     {
+      //       breakpoint:768,
+      //       settings:{
+      //         slidesToShow:2,
+      //       }
+      //     },
+      //     {
+      //       breakpoint:576,
+      //       settings:{
+      //         slidesToShow:2,
+      //       }
+      //     }
+      //   ]
+      // });
+
+
+
+
+      // New-product-slider-end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // New-product-slider-copy-start
+
+
+
+
+
+
+        $('.new-product-slider').slick({
+          slidesToShow:4,
+          prevArrow:'<i class="fa-solid fa-chevron-left new-product-slider-arrow"></i>',
+          nextArrow:'<i class="fa-solid fa-chevron-right new-product-slider-arrow"></i>',
+          autoplay:true,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 3,
+                
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+                
+              }
+            },
+            {
+              breakpoint: 400,
+              settings: {
+                slidesToShow: 1,
+                
+              }
             }
-          },
-          {
-            breakpoint:992,
-            settings:{
-              slidesToShow:4,
-            }
-          },
-          {
-            breakpoint:768,
-            settings:{
-              slidesToShow:2,
-            }
-          },
-          {
-            breakpoint:576,
-            settings:{
-              slidesToShow:2,
-            }
-          }
-        ]
-      });
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+
+
+
+
+
+
+
+
+
+
+        // New-product-slider-copy-end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
               // Countdown Activation
@@ -79,47 +244,212 @@ $(document).ready(function(){
             + '<div><h4>%S</h4><P>Sec</P></div> '));
         });
 
-      //   Deals Slider
-      $('.deals_slider').slick({
-          arrows:false,
-          dots:true,
-          slidesToShow: 2,
-          resposive:[
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 1,
-              }
-            }
-          ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      //   Deals Slider Start
+
+      // $('.deals_slider').slick({
+      //     arrows:false,
+      //     dots:true,
+      //     slidesToShow: 2,
+      //     resposive:[
+      //       {
+      //         breakpoint: 768,
+      //         settings: {
+      //           slidesToShow: 1,
+      //         }
+      //       }
+      //     ]
           
-      })
-      // Latest News Slider
-      $('.latest_slider').slick({
-          arrows:false,
-          dots: true,
-          slidesToShow: 3,
-          resposive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 3,
-              }
-            },
-            {
-              breakpoint: 992,
-              settings: {
-                slidesToShow: 2,
-              }
-            },
-            {
-              breakpoint: 576,
-              settings: {
-                slidesToShow: 1,
-              }
+      // })
+
+      //   Deals Slider Start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // Deals Slider Copy Start
+
+
+      $('.deals_slider').slick({
+              arrows:false,
+              dots:true,
+              slidesToShow: 2,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
             }
-          ]
-      })
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+
+
+
+      // Deals Slider Copy End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // Latest News Slider Start
+      // $('.latest_slider').slick({
+      //     arrows:false,
+      //     dots: true,
+      //     slidesToShow: 3,
+      //     resposive: [
+      //       {
+      //         breakpoint: 1200,
+      //         settings: {
+      //           slidesToShow: 3,
+      //         }
+      //       },
+      //       {
+      //         breakpoint: 992,
+      //         settings: {
+      //           slidesToShow: 2,
+      //         }
+      //       },
+      //       {
+      //         breakpoint: 576,
+      //         settings: {
+      //           slidesToShow: 1,
+      //         }
+      //       }
+      //     ]
+      // })
+      // Lastest News Slider End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // Latest News Slider Copy Start
+
+
+
+      $('.latest_slider').slick({
+              arrows:false,
+              dots: true,
+              slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              // infinite: true,
+              // dots: true
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+
+
+
+      // Latest News Slider Copy End
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        // BackToTop Button
     $(window).on('scroll',function() {
       let scrollTop = $(window).scrollTop();

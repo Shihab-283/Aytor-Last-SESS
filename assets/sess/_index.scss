@@ -224,6 +224,9 @@
     @include sm(){
         height: 600px;
     }
+    @include xs(){
+        height: 550px;
+    }
     background-size: cover !important;
     background-position: center !important;
 }
@@ -251,6 +254,10 @@
     @include sm(){
         left: 32px;
         bottom: 125px;
+    }
+    @include xs(){
+        left: 13px;
+        bottom: 89px;
     }
 }
 
@@ -303,6 +310,10 @@
     @include sm(){
         font-size: 50px;
         line-height: 62px;
+    }
+    @include xs(){
+        font-size: 49px;
+        line-height: 63px;
     }
 }
 
@@ -391,6 +402,9 @@
         margin-top: 24px;
     }
     @include sm(){
+        margin-top: 24px;
+    }
+    @include xs(){
         margin-top: 24px;
     }
 }
@@ -570,6 +584,11 @@
             line-height: 40px;
             padding-bottom: 18px;
         }
+        @include xs(){
+            font-size: 32px;
+            line-height: 40px;
+            padding-bottom: 18px;
+        }
     }
     p{
         color: $light-color;
@@ -589,6 +608,11 @@
             padding-bottom: 44px;
         }
         @include sm(){
+            font-size: 14px;
+            padding-bottom: 43px;
+            line-height: 25px;
+        }
+        @include xs(){
             font-size: 14px;
             padding-bottom: 43px;
             line-height: 25px;
@@ -615,6 +639,12 @@
             padding-bottom: 18px;
         }
         @include sm(){
+            padding-right: 28px;
+            padding-left: 23px;
+            padding-top: 16px;
+            padding-bottom: 15px;
+        }
+        @include xs(){
             padding-right: 28px;
             padding-left: 23px;
             padding-top: 16px;
@@ -1095,9 +1125,17 @@
         padding: 0;
         img{
             margin: 20px;
+            @include xs(){
+                margin: auto;
+            }
         }
         .cart_info{
             margin-left: 20px;
+            @include xs(){
+                text-align: center;
+                padding-bottom: 5px;
+                padding-top: 10px;
+            }
             h5{
                 color: $text-color;
                 font-family: $primary-font;
@@ -1119,6 +1157,7 @@
 
         }
         .cart_footer{
+            
             a{
                 color: $paragraph-color;
                 font-family: $primary-font;
@@ -1127,6 +1166,11 @@
                 line-height: 28px;
                 margin: 4px 0 20px 20px;
                 transition: .4s;
+                @include xs(){
+                    margin: auto;
+                    padding-bottom: 10px;
+                    
+                }
                 i{
                     margin-left: 5px;
                 }
@@ -1139,6 +1183,10 @@
                 line-height: 28px;
                 margin: 4px 0 20px 71px;
                 transition: .4s;
+                @include xs(){
+                    margin: auto;
+                    padding-bottom: 10px;
+                }
             }
             &:hover a{
                 color: $primary-color;
@@ -1166,7 +1214,12 @@
     // position: relative;
 
 
-    // margin-bottom: 20px;
+    // position: relative;
+    // z-index: 95;
+    // transform: translateY(150%);
+    // margin-bottom: 130px;
+
+
     .container{
         padding: 30px 38px;
         // background-color: red;
@@ -1184,6 +1237,9 @@
             padding-bottom: 15px;
         }
         @include sm(){
+            padding-bottom: 15px;
+        }
+        @include xs(){
             padding-bottom: 15px;
         }
         
@@ -1206,6 +1262,10 @@
                 color: $text-color;
                 font-family: $primary-font;
                 font-size: 20px;
+                @include xl(){
+                    font-size: 16px;
+                    line-height: 21px;
+                }
                 @include lg(){
                     font-size: 11px;
                 }
